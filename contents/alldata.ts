@@ -45,7 +45,7 @@ export default function Alldata() {
     const date = formatDistance(
       new Date(year, month, day),
       new Date(currentYear, currentMonth, currentDay),
-      { locale: locale === "pt" ? pt : enUS }
+      { locale: locale === "pt" ? pt : enUS },
     );
 
     const distanceBetweenDate = fullDateWhenAreMonths(date);
@@ -65,10 +65,10 @@ export default function Alldata() {
       label: translate("journey"),
       link: "/journey",
     },
-    {
-      label: translate("projects"),
-      link: "/projects",
-    },
+    // {
+    //   label: translate("projects"),
+    //   link: "/journey", // Temporarily link to journey update later from projects page
+    // },
     {
       label: translate("contacts"),
       link: "/contacts",
@@ -82,7 +82,7 @@ export default function Alldata() {
         { label: translate("home"), link: "/" },
         { label: translate("about"), link: "/about" },
         { label: translate("journey"), link: "/journey" },
-        { label: translate("projects"), link: "/projects" },
+        // { label: translate("projects"), link: "/journey" }, // Temporarily link to journey update later from projects page
         { label: translate("contacts"), link: "/contacts" },
       ],
     },
@@ -242,7 +242,7 @@ export default function Alldata() {
     month: string,
     year: number,
     months: number,
-    day: number
+    day: number,
   ) => `${translate(month)} - ${getDate(year, months, day)}`;
 
   const allJourney = [
