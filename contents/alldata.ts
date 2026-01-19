@@ -67,7 +67,7 @@ export default function Alldata() {
     },
     // {
     //   label: translate("projects"),
-    //   link: "/journey", // Temporarily link to journey update later from projects
+    //   link: "/journey", // Temporarily link to journey update later from projects page
     // },
     {
       label: translate("contacts"),
