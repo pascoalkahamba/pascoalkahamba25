@@ -55,18 +55,10 @@ export default function Projects() {
   const { t: translate } = useTranslation("projects");
   const bigScreen = useMedia("(min-width:80rem)");
   const {
-    financialImages,
-    financialTechnologies,
-    crudTechnologies,
-    crudImages,
     ispbImages,
     beautySalonImages,
     ispbTechnologies,
-    findFiveImages,
     showDateBuiltProject,
-    findFiveTechnologies,
-    studentStatisticsImages,
-    studentStatisticsTechnologies,
   } = Alldata();
 
   return (
@@ -110,7 +102,7 @@ export default function Projects() {
             dataAos="fade-left"
           />
           <ProjectCarousel
-            dateBuiltTheProject={showDateBuiltProject("april", 2025, 4, 22)}
+            dateBuiltTheProject={showDateBuiltProject("march", 2025, 3, 22)}
             vercelLink={projectIspbvercel}
             githubLink={projectIspbGitihub}
             name={translate("ispb-blog-admin")}

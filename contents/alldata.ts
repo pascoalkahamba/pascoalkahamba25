@@ -457,6 +457,7 @@ export default function Alldata() {
     "/projectIspbPhotos/firtDashboard.png",
     "/projectIspbPhotos/secondDashboard.png",
     "/projectIspbPhotos/signUp.png",
+    "/projectIspbPhotos/profile.png",
   ];
 
   const findFiveImages = [
