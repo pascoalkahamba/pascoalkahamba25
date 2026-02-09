@@ -39,6 +39,8 @@ const {
   projectfinancialmanagergithub,
   projectIspbGitihub,
   projectIspbvercel,
+  projectBeautySalonGithub,
+  projectBeautySalonvercel,
   projectstudentstatisticsvercel,
   projectnewcrudvercel,
   projectfindfivegithub,
@@ -58,6 +60,7 @@ export default function Projects() {
     crudTechnologies,
     crudImages,
     ispbImages,
+    beautySalonImages,
     ispbTechnologies,
     findFiveImages,
     showDateBuiltProject,
@@ -97,45 +100,25 @@ export default function Projects() {
             dataAos="fade-right"
           />
           <ProjectCarousel
-            dateBuiltTheProject={showDateBuiltProject("may", 2022, 7, 15)}
-            vercelLink={projectfinancialmanagervercel}
-            githubLink={projectfinancialmanagergithub}
-            name={translate("financial-manager")}
+            dateBuiltTheProject={showDateBuiltProject("august", 2025, 8, 12)}
+            vercelLink={projectBeautySalonvercel}
+            githubLink={projectBeautySalonGithub}
+            name={translate("beauty-salon")}
             status={translate("status")}
-            technologies={financialTechnologies}
-            images={financialImages}
-            dataAos="fade-right"
-          />
-          {/* <ProjectCarousel
-            dateBuiltTheProject={showDateBuiltProject("april", 2022, 2, 20)}
-            vercelLink={projectnewcrudvercel}
-            githubLink={projectnewcrudgithub}
-            name={translate("crud")}
-            status={translate("status")}
-            technologies={crudTechnologies}
-            images={crudImages}
+            technologies={ispbTechnologies}
+            images={beautySalonImages}
             dataAos="fade-left"
           />
           <ProjectCarousel
-            dateBuiltTheProject={showDateBuiltProject("june", 2021, 5, 24)}
-            vercelLink={projectstudentstatisticsvercel}
-            githubLink={projectstudentstatisticsgithub}
-            name={translate("students-statistics")}
+            dateBuiltTheProject={showDateBuiltProject("april", 2025, 4, 22)}
+            vercelLink={projectIspbvercel}
+            githubLink={projectIspbGitihub}
+            name={translate("ispb-blog-admin")}
             status={translate("status")}
-            technologies={studentStatisticsTechnologies}
-            images={studentStatisticsImages}
+            technologies={ispbTechnologies}
+            images={ispbImages}
             dataAos="fade-right"
           />
-          <ProjectCarousel
-            dateBuiltTheProject={showDateBuiltProject("march", 2021, 7, 12)}
-            vercelLink={projectfindfivevercel}
-            githubLink={projectfindfivegithub}
-            name={translate("find-5")}
-            status={translate("status")}
-            technologies={findFiveTechnologies}
-            images={findFiveImages}
-            dataAos="fade-left"
-          /> */}
         </div>
       </Box>
     </>

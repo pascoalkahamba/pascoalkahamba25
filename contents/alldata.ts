@@ -428,6 +428,14 @@ export default function Alldata() {
     "/projectFinancial/financialProject05.PNG",
   ];
 
+  const beautySalonImages = [
+    "/projectBeautySalon/beautySalonSignIn.png",
+    "/projectBeautySalon/beautySalonSignUp.png",
+    "/projectBeautySalon/beautySalonProfile.png",
+    "/projectBeautySalon/beautySalonDashboard.png",
+    "/projectBeautySalon/beautySalonAppointment.png",
+  ];
+
   const crudImages = [
     "/projectCrud/crud0.PNG",
     "/projectCrud/crud1.PNG",
@@ -476,6 +484,7 @@ export default function Alldata() {
     findFiveImages,
     findFiveTechnologies,
     allJourney,
+    beautySalonImages,
     crudImages,
     crudTechnologies,
     backEndSkills,

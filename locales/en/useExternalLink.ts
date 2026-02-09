@@ -37,6 +37,10 @@ const translations = {
   reactdoc: "https://react.dev/",
   projectfinancialmanagervercel: "https://financial-manager-lemon.vercel.app/",
   projectIspbvercel: "https://blog-of-university-ispb-frontend.vercel.app/",
+  projectBeautySalonvercel:
+    "https://manage-beauty-salon-frontend-update.vercel.app/",
+  projectBeautySalonGithub:
+    "https://github.com/pascoalkahamba/manage-beauty-salon-frontend",
   projectIspbGitihub:
     "https://github.com/pascoalkahamba/blog-of-university-ispb-frontend",
   projectfinancialmanagergithub:
