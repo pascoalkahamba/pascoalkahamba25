@@ -20,7 +20,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const { Component, pageProps } = props;
 
   const [colorScheme, setColorScheme] = useState<ColorScheme>(
-    props.colorScheme
+    props.colorScheme,
   );
 
   const toggleColorScheme = (value?: ColorScheme) => {
@@ -48,7 +48,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <link rel="shortcut icon" href="/developer-photo.png" />
+        <link rel="shortcut icon" href="/developer-photo.jpg" />
       </Head>
 
       <ColorSchemeProvider

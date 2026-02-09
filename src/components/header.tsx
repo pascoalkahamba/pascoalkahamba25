@@ -133,7 +133,7 @@ export default function HeaderMegaMenu() {
           <UserProfile
             kindOfUser="header"
             name={nameDeveloper}
-            image="/developer-photo.png"
+            image="/developer-photo.jpg"
             skill={translate("my-skill")}
           />
           {mobile && (

@@ -192,7 +192,7 @@ export default function About() {
             data-aos-duration="1400"
           >
             <Image
-              src="/big-developer-photo.jpg"
+              src="/developer-photo.jpeg"
               alt="developer-picture"
               className={classes.picture}
             />
