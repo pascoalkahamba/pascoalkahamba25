@@ -37,6 +37,8 @@ const useStyles = createStyles((theme) => ({
 const {
   projectfinancialmanagervercel,
   projectfinancialmanagergithub,
+  projectIspbGitihub,
+  projectIspbvercel,
   projectstudentstatisticsvercel,
   projectnewcrudvercel,
   projectfindfivegithub,
@@ -55,6 +57,8 @@ export default function Projects() {
     financialTechnologies,
     crudTechnologies,
     crudImages,
+    ispbImages,
+    ispbTechnologies,
     findFiveImages,
     showDateBuiltProject,
     findFiveTechnologies,
@@ -83,6 +87,16 @@ export default function Projects() {
         <GlobalTitle title={translate("page-title")} width={300} />
         <div className={classes.projects}>
           <ProjectCarousel
+            dateBuiltTheProject={showDateBuiltProject("april", 2025, 4, 22)}
+            vercelLink={projectIspbvercel}
+            githubLink={projectIspbGitihub}
+            name={translate("ispb-blog")}
+            status={translate("status")}
+            technologies={ispbTechnologies}
+            images={ispbImages}
+            dataAos="fade-right"
+          />
+          <ProjectCarousel
             dateBuiltTheProject={showDateBuiltProject("may", 2022, 7, 15)}
             vercelLink={projectfinancialmanagervercel}
             githubLink={projectfinancialmanagergithub}
@@ -92,7 +106,7 @@ export default function Projects() {
             images={financialImages}
             dataAos="fade-right"
           />
-          <ProjectCarousel
+          {/* <ProjectCarousel
             dateBuiltTheProject={showDateBuiltProject("april", 2022, 2, 20)}
             vercelLink={projectnewcrudvercel}
             githubLink={projectnewcrudgithub}
@@ -121,7 +135,7 @@ export default function Projects() {
             technologies={findFiveTechnologies}
             images={findFiveImages}
             dataAos="fade-left"
-          />
+          /> */}
         </div>
       </Box>
     </>

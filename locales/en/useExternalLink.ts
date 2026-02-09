@@ -36,6 +36,9 @@ const translations = {
   cursodereact: "https://www.youtube.com/watch?v=iIQOtwsWXqU&t=28s",
   reactdoc: "https://react.dev/",
   projectfinancialmanagervercel: "https://financial-manager-lemon.vercel.app/",
+  projectIspbvercel: "https://blog-of-university-ispb-frontend.vercel.app/",
+  projectIspbGitihub:
+    "https://github.com/pascoalkahamba/blog-of-university-ispb-frontend",
   projectfinancialmanagergithub:
     "https://github.com/PascoalKahamba/financial-manager",
   projectstudentstatisticsvercel: "https://student-statistics.vercel.app/",

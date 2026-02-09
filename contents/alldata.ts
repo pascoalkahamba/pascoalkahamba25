@@ -65,10 +65,10 @@ export default function Alldata() {
       label: translate("journey"),
       link: "/journey",
     },
-    // {
-    //   label: translate("projects"),
-    //   link: "/journey", // Temporarily link to journey update later from projects page
-    // },
+    {
+      label: translate("projects"),
+      link: "/projects",
+    },
     {
       label: translate("contacts"),
       link: "/contacts",
@@ -443,6 +443,13 @@ export default function Alldata() {
     "/projectStudentStatistics/student04.PNG",
     "/projectStudentStatistics/student05.PNG",
   ];
+  const ispbImages = [
+    "/projectIspbPhotos/signIn.png",
+    "/projectIspbPhotos/detailsPost.png",
+    "/projectIspbPhotos/firtDashboard.png",
+    "/projectIspbPhotos/secondDashboard.png",
+    "/projectIspbPhotos/signUp.png",
+  ];
 
   const findFiveImages = [
     "/projectFindFive/findFive01.PNG",
@@ -452,6 +459,7 @@ export default function Alldata() {
     "/projectFindFive/findFive05.PNG",
   ];
   const financialTechnologies = ["TypeScript", "React", "Material-UI"];
+  const ispbTechnologies = ["TypeScript", "Nextjs", "Mantine-UI"];
   const studentStatisticsTechnologies = ["TypeScript", "React", "Material-UI"];
   const crudTechnologies = ["TypeScript", "React", "Styled-Components"];
   const findFiveTechnologies = ["TypeScript", "React", "Styled-Components"];
@@ -460,6 +468,8 @@ export default function Alldata() {
     financialImages,
     financialTechnologies,
     mainLinks,
+    ispbImages,
+    ispbTechnologies,
     footerData,
     studentStatisticsImages,
     studentStatisticsTechnologies,
