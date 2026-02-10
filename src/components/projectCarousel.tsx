@@ -17,7 +17,7 @@ import { TbBrandVercel } from "react-icons/tb";
 
 const useStyles = createStyles((theme) => ({
   technologies: {
-    backgroundColor: theme.colors.blue[5],
+    backgroundColor: "",
     color: theme.colorScheme === "dark" ? theme.white : theme.black,
     borderRadius: theme.spacing.xs,
     padding: "5px 0.5rem",
@@ -158,7 +158,16 @@ export default function ProjectCarousel({
         </div>
         <div className={classes.statusAndDate}>
           <span className={classes.showDate}>{dateBuiltTheProject}</span>
-          <Text fz="xs" className={classes.technologies} fw={500}>
+          <Text
+            fz="xs"
+            className={classes.technologies}
+            fw={500}
+            bg={
+              status === "Em andamento" || status === "In Progress"
+                ? "yellow"
+                : "blue"
+            }
+          >
             {status}
           </Text>
         </div>

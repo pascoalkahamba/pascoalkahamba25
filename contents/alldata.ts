@@ -427,6 +427,15 @@ export default function Alldata() {
     "/projectFinancial/financialProject04.PNG",
     "/projectFinancial/financialProject05.PNG",
   ];
+  const postNewsImages = [
+    "/projectPostNews/signIn.png",
+    "/projectPostNews/signUp.png",
+    "/projectPostNews/dashboard.png",
+    "/projectPostNews/dashboardAdmin.png",
+    "/projectPostNews/profile.png",
+    "/projectPostNews/dashboardFooter.png",
+    "/projectPostNews/createPost.png",
+  ];
 
   const beautySalonImages = [
     "/projectBeautySalon/beautySalonSignIn.png",
@@ -469,6 +478,13 @@ export default function Alldata() {
   ];
   const financialTechnologies = ["TypeScript", "React", "Material-UI"];
   const ispbTechnologies = ["TypeScript", "Nextjs", "Mantine-UI"];
+  const postNewsTechnologies = [
+    "TypeScript",
+    "Nextjs",
+    "Mantine-UI",
+    "Radix-ui",
+    "Tailwindcss",
+  ];
   const studentStatisticsTechnologies = ["TypeScript", "React", "Material-UI"];
   const crudTechnologies = ["TypeScript", "React", "Styled-Components"];
   const findFiveTechnologies = ["TypeScript", "React", "Styled-Components"];
@@ -478,6 +494,7 @@ export default function Alldata() {
     financialTechnologies,
     mainLinks,
     ispbImages,
+    postNewsImages,
     ispbTechnologies,
     footerData,
     studentStatisticsImages,
@@ -486,6 +503,7 @@ export default function Alldata() {
     findFiveTechnologies,
     allJourney,
     beautySalonImages,
+    postNewsTechnologies,
     crudImages,
     crudTechnologies,
     backEndSkills,

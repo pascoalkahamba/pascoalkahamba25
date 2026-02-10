@@ -35,18 +35,12 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const {
-  projectfinancialmanagervercel,
-  projectfinancialmanagergithub,
   projectIspbGitihub,
   projectIspbvercel,
   projectBeautySalonGithub,
+  projectPostNewsGithub,
+  projectPostNewsvercel,
   projectBeautySalonvercel,
-  projectstudentstatisticsvercel,
-  projectnewcrudvercel,
-  projectfindfivegithub,
-  projectfindfivevercel,
-  projectstudentstatisticsgithub,
-  projectnewcrudgithub,
 } = translations;
 
 export default function Projects() {
@@ -57,6 +51,8 @@ export default function Projects() {
   const {
     ispbImages,
     beautySalonImages,
+    postNewsImages,
+    postNewsTechnologies,
     ispbTechnologies,
     showDateBuiltProject,
   } = Alldata();
@@ -82,7 +78,7 @@ export default function Projects() {
         <GlobalTitle title={translate("page-title")} width={300} />
         <div className={classes.projects}>
           <ProjectCarousel
-            dateBuiltTheProject={showDateBuiltProject("april", 2025, 4, 22)}
+            dateBuiltTheProject={showDateBuiltProject("april", 2024, 4, 22)}
             vercelLink={projectIspbvercel}
             githubLink={projectIspbGitihub}
             name={translate("ispb-blog")}
@@ -92,7 +88,7 @@ export default function Projects() {
             dataAos="fade-right"
           />
           <ProjectCarousel
-            dateBuiltTheProject={showDateBuiltProject("august", 2025, 8, 12)}
+            dateBuiltTheProject={showDateBuiltProject("november", 2024, 11, 12)}
             vercelLink={projectBeautySalonvercel}
             githubLink={projectBeautySalonGithub}
             name={translate("beauty-salon")}
@@ -101,8 +97,19 @@ export default function Projects() {
             images={beautySalonImages}
             dataAos="fade-left"
           />
+
           <ProjectCarousel
-            dateBuiltTheProject={showDateBuiltProject("march", 2025, 3, 22)}
+            dateBuiltTheProject={showDateBuiltProject("september", 2025, 9, 12)}
+            vercelLink={projectPostNewsvercel}
+            githubLink={projectPostNewsGithub}
+            name={translate("post-news")}
+            status={translate("statusInProgress")}
+            technologies={postNewsTechnologies}
+            images={postNewsImages}
+            dataAos="fade-left"
+          />
+          <ProjectCarousel
+            dateBuiltTheProject={showDateBuiltProject("march", 2024, 3, 22)}
             vercelLink={projectIspbvercel}
             githubLink={projectIspbGitihub}
             name={translate("ispb-blog-admin")}

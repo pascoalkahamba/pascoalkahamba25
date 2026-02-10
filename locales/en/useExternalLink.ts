@@ -31,6 +31,9 @@ const translations = {
   projetocrud: "https://project-crud.vercel.app/",
   codeleapwebsite: "https://codeleap.co.uk/",
   projectnewcrudvercel: "https://project-engineering-test.vercel.app/",
+  projectPostNewsGithub:
+    "https://github.com/pascoalkahamba/post-news-frontend-updated",
+  projectPostNewsvercel: "https://post-news-frontend.vercel.app/",
   projectnewcrudgithub:
     "https://github.com/PascoalKahamba/Project-Engineering-Test",
   cursodereact: "https://www.youtube.com/watch?v=iIQOtwsWXqU&t=28s",

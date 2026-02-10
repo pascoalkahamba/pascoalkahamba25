@@ -1,10 +1,12 @@
 {
   "page-title": "Projects",
   "beauty-salon": "Beauty Salon",
+  "post-news": "Post News",
   "students-statistics": "Statistics of Students",
   "find-5": "Find-5",
   "crud": "Modern CRUD ",
   "status": "Completed",
+  "statusInProgress": "In Progress",
   "about-project": "During my journey, I have developed several professional projects, always aiming to advance my career by leveraging the latest technologies in the market. Below, I present some of my projects.",
   "financial-manager": "Financial Manager"
 }
