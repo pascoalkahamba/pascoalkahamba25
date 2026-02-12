@@ -199,6 +199,12 @@ export default function Alldata() {
       description: translate("vercel"),
     },
     {
+      name: "Docker",
+      icon: "/docker.svg",
+      aosDuration: 1400,
+      description: translate("docker"),
+    },
+    {
       name: "phpmyadmin",
       icon: "/phpmyadmin.svg",
       aosDuration: 1400,
