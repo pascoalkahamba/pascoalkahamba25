@@ -169,6 +169,22 @@ export default function MyTimeline() {
         </Text>
       );
     }
+    if (textLink === "docker") {
+      return (
+        <Text c="dimmed" size="sm">
+          <ParseStyledText>{translate("about-learned-docker")}</ParseStyledText>
+        </Text>
+      );
+    }
+    if (textLink === "postnews") {
+      return (
+        <Text c="dimmed" size="sm">
+          <ParseStyledText>
+            {translate("about-creating-post-news")}
+          </ParseStyledText>
+        </Text>
+      );
+    }
     if (textLink === "jotai") {
       return (
         <Text c="dimmed" size="sm">

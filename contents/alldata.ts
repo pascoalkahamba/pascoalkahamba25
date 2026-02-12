@@ -247,7 +247,9 @@ export default function Alldata() {
   const dateLearnMantine = getDate(2023, JUNE, 20);
   const dateCreatedMyPortfolio = getDate(2023, JULY, 26);
   const dateCreatedIspbBlog = getDate(2024, APRIL, 22);
-  const dateCreatedBeautySalon = getDate(2024, JULY, 10);
+  const dateCreatedBeautySalon = getDate(2024, DECEMBER, 11);
+  const dateCreatedPostNews = getDate(2025, SEPTEMBER, 12);
+  const dateLearnedDocker = getDate(2025, FEBRUARY, 20);
 
   const showDateBuiltProject = (
     month: string,
@@ -446,7 +448,22 @@ export default function Alldata() {
         textLink: "beautysalon",
       },
     ],
-    [],
+    [
+      {
+        title: translate("learned-docker"),
+        description: " ",
+        date: `${translate("march")} - ${dateLearnedDocker}`,
+        dataAos: "fade-right",
+        textLink: "docker",
+      },
+      {
+        title: translate("created-post-news"),
+        description: " ",
+        date: `${translate("march")} - ${dateCreatedPostNews}`,
+        dataAos: "fade-left",
+        textLink: "postnews",
+      },
+    ],
   ];
   const financialImages = [
     "/projectFinancial/financialProject.PNG",
