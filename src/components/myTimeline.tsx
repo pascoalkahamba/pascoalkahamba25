@@ -162,6 +162,13 @@ export default function MyTimeline() {
         </Text>
       );
     }
+    if (textLink === "beautysalon") {
+      return (
+        <Text c="dimmed" size="sm">
+          <ParseStyledText>{translate("about-beauty-salon")}</ParseStyledText>
+        </Text>
+      );
+    }
     if (textLink === "jotai") {
       return (
         <Text c="dimmed" size="sm">

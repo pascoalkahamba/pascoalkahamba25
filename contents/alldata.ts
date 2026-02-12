@@ -247,6 +247,7 @@ export default function Alldata() {
   const dateLearnMantine = getDate(2023, JUNE, 20);
   const dateCreatedMyPortfolio = getDate(2023, JULY, 26);
   const dateCreatedIspbBlog = getDate(2024, APRIL, 22);
+  const dateCreatedBeautySalon = getDate(2024, JULY, 10);
 
   const showDateBuiltProject = (
     month: string,
@@ -438,18 +439,11 @@ export default function Alldata() {
         textLink: "ispb",
       },
       {
-        title: translate("created-my-portfolio"),
+        title: translate("created-beauty-salon"),
         description: " ",
-        date: `${translate("july")} - ${dateCreatedMyPortfolio}`,
-        dataAos: "fade-right",
-        textLink: "portfolio",
-      },
-      {
-        title: translate("created-my-portfolio"),
-        description: " ",
-        date: `${translate("july")} - ${dateCreatedMyPortfolio}`,
-        dataAos: "fade-right",
-        textLink: "portfolio",
+        date: `${translate("march")} - ${dateCreatedBeautySalon}`,
+        dataAos: "fade-left",
+        textLink: "beautysalon",
       },
     ],
     [],
