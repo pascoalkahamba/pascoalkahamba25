@@ -65,7 +65,7 @@ interface YearTitleProps {
 
 const SCROLL_TO_A_LOCAL_PAGE = 400;
 const FIRST_TIMELINE_YEAR = 0;
-const LAST_TIMELINE_YEAR = 5;
+const LAST_TIMELINE_YEAR = 7;
 const MORE_ONE_MONTH = 1;
 
 export default function YearTitle({ kindOfTitle }: YearTitleProps) {

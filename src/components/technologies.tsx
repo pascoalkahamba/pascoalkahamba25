@@ -1,6 +1,7 @@
-import { createStyles, Box, Image, Tooltip, rem } from "@mantine/core";
+import { createStyles, Box, Image, Tooltip, rem, Text } from "@mantine/core";
 import { AlertCircleIcon } from "lucide-react";
 import GlobalTitle from "./globalTitle";
+import { ParseStyledText } from "./StyledText";
 
 interface TechnologiesProps {
   job: string;
@@ -64,7 +65,7 @@ export default function Technologias({
       label={
         <div className={classes.flexLenged}>
           <AlertCircleIcon style={{ flex: "1 0 1.2rem" }} />
-          <span>{description}</span>
+          <ParseStyledText>{description}</ParseStyledText>
         </div>
       }
       position="bottom"

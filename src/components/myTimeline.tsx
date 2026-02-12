@@ -6,6 +6,7 @@ import Alldata from "../../contents/alldata";
 import { CalendarCheck } from "lucide-react";
 import translations from "../../locales/en/useExternalLink";
 import useTranslation from "next-translate/useTranslation";
+import { ParseStyledText } from "./StyledText";
 
 const useStyles = createStyles((theme) => ({
   timeline: {
@@ -50,6 +51,7 @@ const {
   typescript,
   frontEnd,
   materialuidocs,
+  ispbLink,
   styledcomponentsdocs,
   projectnewcrudvercel,
   codeleapwebsite,
@@ -144,6 +146,19 @@ export default function MyTimeline() {
             </a>
           </Link>{" "}
           {translate("end-about-my-portfolio")}
+        </Text>
+      );
+    }
+    if (textLink === "ispb") {
+      return (
+        <Text c="dimmed" size="sm">
+          {translate("about-ispb-blog")}{" "}
+          <Link href={ispbLink}>
+            <a className={classes.links} target="_blank">
+              ISPB
+            </a>
+          </Link>{" "}
+          <ParseStyledText>{translate("end-about-ispb-blog")}</ParseStyledText>
         </Text>
       );
     }
@@ -431,11 +446,7 @@ export default function MyTimeline() {
       );
     }
 
-    return (
-      <Text c="dimmed" size="sm">
-        {description}
-      </Text>
-    );
+    return <ParseStyledText>{description}</ParseStyledText>;
   }
 
   const timelineItems = myTimeline.map(
@@ -451,7 +462,7 @@ export default function MyTimeline() {
           <CalendarCheck size="1rem" /> {date}
         </Text>
       </Timeline.Item>
-    )
+    ),
   );
 
   return (

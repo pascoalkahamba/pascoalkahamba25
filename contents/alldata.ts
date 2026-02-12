@@ -212,7 +212,16 @@ export default function Alldata() {
     },
   ];
 
-  const allYears = ["2018", "2019", "2020", "2021", "2022", "2023", "2024"];
+  const allYears = [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+  ];
 
   const dateWentOnSchool = getDate(2018, FEBRUARY, 2);
   const dateStartedLogic = getDate(2018, MAY, 11);
@@ -237,6 +246,7 @@ export default function Alldata() {
   const dateLearnJotai = getDate(2023, JUNE, 10);
   const dateLearnMantine = getDate(2023, JUNE, 20);
   const dateCreatedMyPortfolio = getDate(2023, JULY, 26);
+  const dateCreatedIspbBlog = getDate(2024, APRIL, 22);
 
   const showDateBuiltProject = (
     month: string,
@@ -419,6 +429,30 @@ export default function Alldata() {
         textLink: "portfolio",
       },
     ],
+    [
+      {
+        title: translate("created-ispb-blog"),
+        description: " ",
+        date: `${translate("april")} - ${dateCreatedIspbBlog}`,
+        dataAos: "fade-right",
+        textLink: "ispb",
+      },
+      {
+        title: translate("created-my-portfolio"),
+        description: " ",
+        date: `${translate("july")} - ${dateCreatedMyPortfolio}`,
+        dataAos: "fade-right",
+        textLink: "portfolio",
+      },
+      {
+        title: translate("created-my-portfolio"),
+        description: " ",
+        date: `${translate("july")} - ${dateCreatedMyPortfolio}`,
+        dataAos: "fade-right",
+        textLink: "portfolio",
+      },
+    ],
+    [],
   ];
   const financialImages = [
     "/projectFinancial/financialProject.PNG",
