@@ -82,7 +82,7 @@ export default function Alldata() {
         { label: translate("home"), link: "/" },
         { label: translate("about"), link: "/about" },
         { label: translate("journey"), link: "/journey" },
-        // { label: translate("projects"), link: "/journey" }, // Temporarily link to journey update later from projects page
+        { label: translate("projects"), link: "/projects" },
         { label: translate("contacts"), link: "/contacts" },
       ],
     },
@@ -98,6 +98,8 @@ export default function Alldata() {
     {
       title: translate("journey"),
       links: [
+        { label: "2025", link: "/journey" },
+        { label: "2024", link: "/journey" },
         { label: "2023", link: "/journey" },
         { label: "2022", link: "/journey" },
         { label: "2021", link: "/journey" },

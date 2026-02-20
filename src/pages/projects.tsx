@@ -38,6 +38,9 @@ const {
   projectIspbGitihub,
   projectIspbvercel,
   projectBeautySalonGithub,
+  projectBeautySalonBackend,
+  ispbBackendLink,
+  postNewsBackendLink,
   projectPostNewsGithub,
   projectPostNewsvercel,
   projectBeautySalonvercel,
@@ -81,6 +84,7 @@ export default function Projects() {
             dateBuiltTheProject={showDateBuiltProject("april", 2024, 4, 22)}
             vercelLink={projectIspbvercel}
             githubLink={projectIspbGitihub}
+            backendLink={ispbBackendLink}
             name={translate("ispb-blog")}
             status={translate("status")}
             technologies={ispbTechnologies}
@@ -91,6 +95,7 @@ export default function Projects() {
             dateBuiltTheProject={showDateBuiltProject("november", 2024, 11, 12)}
             vercelLink={projectBeautySalonvercel}
             githubLink={projectBeautySalonGithub}
+            backendLink={projectBeautySalonBackend}
             name={translate("beauty-salon")}
             status={translate("status")}
             technologies={ispbTechnologies}
@@ -101,6 +106,7 @@ export default function Projects() {
           <ProjectCarousel
             dateBuiltTheProject={showDateBuiltProject("september", 2025, 9, 12)}
             vercelLink={projectPostNewsvercel}
+            backendLink={postNewsBackendLink}
             githubLink={projectPostNewsGithub}
             name={translate("post-news")}
             status={translate("statusInProgress")}
@@ -112,6 +118,7 @@ export default function Projects() {
             dateBuiltTheProject={showDateBuiltProject("march", 2024, 3, 22)}
             vercelLink={projectIspbvercel}
             githubLink={projectIspbGitihub}
+            backendLink={ispbBackendLink}
             name={translate("ispb-blog-admin")}
             status={translate("status")}
             technologies={ispbTechnologies}

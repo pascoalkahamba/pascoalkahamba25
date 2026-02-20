@@ -9,11 +9,11 @@ import {
   px,
 } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
-import { CalendarCheck, StarIcon } from "lucide-react";
 import classs from "../styles/projectCarousel.module.css";
 import Link from "next/link";
 import { GithubIcon } from "lucide-react";
 import { TbBrandVercel } from "react-icons/tb";
+import { FaCode } from "react-icons/fa";
 
 const useStyles = createStyles((theme) => ({
   technologies: {
@@ -79,6 +79,7 @@ interface ProjectCarouselProps {
   name: string;
   githubLink: string;
   vercelLink: string;
+  backendLink: string;
   dataAos: string;
   dateBuiltTheProject: string;
   status: string;
@@ -89,6 +90,7 @@ export default function ProjectCarousel({
   images,
   name,
   technologies,
+  backendLink,
   status,
   githubLink,
   vercelLink,
@@ -153,6 +155,11 @@ export default function ProjectCarousel({
           <Link href={vercelLink}>
             <a className={classes.links} target="_blank">
               <TbBrandVercel size="1.5rem" />
+            </a>
+          </Link>
+          <Link href={backendLink}>
+            <a className={classes.links} target="_blank">
+              <FaCode size="1.5rem" />
             </a>
           </Link>
         </div>

@@ -3,6 +3,9 @@ export type TranslationUseExternalLink = typeof translations;
 const translations = {
   javascript: "https://en.wikipedia.org/wiki/JavaScript",
   ispbLink: "https://www.ispbenguela.com/",
+  postNewsBackendLink: "https://github.com/pascoalkahamba/post-news-backend",
+  ispbBackendLink:
+    "https://github.com/pascoalkahamba/blog-of-university-ispb-backend",
   html5: "https://en.wikipedia.org/wiki/HTML",
   css3: "https://en.wikipedia.org/wiki/Cascading_Style_Sheets",
   programmingLogic: "https://en.wikipedia.org/wiki/Logic_programming",
@@ -43,6 +46,8 @@ const translations = {
   projectIspbvercel: "https://blog-of-university-ispb-frontend.vercel.app/",
   projectBeautySalonvercel:
     "https://manage-beauty-salon-frontend-update.vercel.app/",
+  projectBeautySalonBackend:
+    "https://github.com/pascoalkahamba/manage-beauty-salon-backend",
   projectBeautySalonGithub:
     "https://github.com/pascoalkahamba/manage-beauty-salon-frontend",
   projectIspbGitihub:
